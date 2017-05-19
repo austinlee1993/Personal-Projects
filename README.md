@@ -1,2 +1,1 @@
-# proto
-Used for my personal projects
+Personal Projects
