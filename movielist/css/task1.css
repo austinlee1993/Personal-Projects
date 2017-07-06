@@ -1,0 +1,44 @@
+body{
+	padding-top:50px;
+	background-image: url(https://cdn-images-1.medium.com/max/1366/1*lEOjG5403Pg4JOLHr4PtdA.jpeg);
+}
+
+.card {
+	align-items:center; 
+	display:flex;
+	float:left; 
+	//height:300px; 
+	background-color:white;
+	font-family: 'Droid Sans', serif;
+	box-shadow:0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+	margin:10px 0px;
+	border-radius:4px;
+	width:100%;
+}
+
+.card-info{
+	padding:15px;
+}
+
+
+
+.searchBox h1{
+	font-size:60px;
+	text-transform: uppercase;
+	font-family: 'Monoton', cursive;
+
+}
+
+
+
+.searchBox{
+	padding: 30px 50px 50px;
+	background-color:#e0dddd;
+	box-shadow:0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+	border-radius:10px;
+    font-family: 'Droid Sans', serif;
+    margin-top:40px;
+    margin-bottom:5px;
+}
+
+.card img{padding:20px;}
