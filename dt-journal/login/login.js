@@ -9,8 +9,6 @@ angular.module('myApp.login', ['ngRoute'])
     templateUrl: 'login/register.html',
     controller :'AuthController'
   });
-
-
 }])
 
 .controller('AuthController', ['$scope', '$firebaseAuth', '$firebaseArray', '$location', function($scope, $firebaseAuth, $firebaseArray, $location) {
@@ -28,11 +26,10 @@ angular.module('myApp.login', ['ngRoute'])
         .catch(function(error){           
            $scope.signInError = 'true';
            $scope.signInErrorMsg = error.message;
-        });
-        
+        });        
 
         var ref = firebase.database().ref().child('users');
-    	var newUser = ref.push();
+    	  var newUser = ref.push();
 
     	ref.push().set({
               email: username
@@ -40,7 +37,7 @@ angular.module('myApp.login', ['ngRoute'])
     }	
         
     $scope.login = function(){
-        var username = $scope.user.email;
+      var username = $scope.user.email;
     	var password = $scope.user.password;
     	var auth = $firebaseAuth();
     	
@@ -53,19 +50,11 @@ angular.module('myApp.login', ['ngRoute'])
             $scope.signInErrorMsg = error.message;
     	});	
     }
-
-    
-
-     
-
-
 }])
 
-.service('myService',['$firebaseAuth', function($firebaseAuth){   
-   
-    // this.getUser = function(){
-    //     var user = firebase.auth().currentUser.uid;
-    // 	return user;
-    // };
-
+.service('myService',['$firebaseAuth', function($firebaseAuth){  
+     this.getUser = function(){
+        var user = firebase.auth().currentUser.uid;
+        return user;
+     };
 }]);
