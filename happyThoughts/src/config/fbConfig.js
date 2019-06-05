@@ -4,7 +4,7 @@ import 'firebase/auth'
 
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyBwah4lZ97X11BNU-6WxeHjoLCf9ht_kqM",
+    apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     authDomain: "happythoughts-17fd8.firebaseapp.com",
     databaseURL: "https://happythoughts-17fd8.firebaseio.com",
     projectId: "happythoughts-17fd8",
@@ -15,7 +15,5 @@ import 'firebase/auth'
   
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  // const db = firebase.firestore();
-  // firebase.firestore().settings();
-
+  
   export default firebase;
