@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(/img/smileboy.jpg) no-repeat;
+  background-size: 100%;
+  min-height: 100%;
+
+}
+
+h5, .navTitle{
+  font-family: 'Petit Formal Script', cursive;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+form{
+  padding:20px;
+  border:1px solid #ccc;
+  box-shadow:0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+  border-radius:4px;
+}
+
+.container-fluid{
+  min-height: 110vh;
+  background: url(/img/wood.jpg) no-repeat;
+}
+
+.container{
+  width:100% !important;
+}
+
+.form-wrapper{
+  padding:50px 0px;
+}
+
+.thoughtTime{
+  margin-top:10px !important;
+}
+
+.delete-btn{
+  float:right;
+  font-weight:bold;
+  color:#ccc !important;
+  cursor:pointer
+}
+
+@media only screen and (max-width: 992px){
+nav .brand-logo {
+    left: 25px; 
+    -webkit-transform: none;
+    transform: none; 
+    font-size: 15px;
+}
+
+body{
+  background: url(/img/wood.jpg) repeat;
+}
+}
